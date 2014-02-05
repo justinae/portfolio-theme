@@ -1,0 +1,293 @@
+/*
+Theme Name:     Portfolio
+Theme URI:      http://justineuteneier.com/themes/portfolio
+Description:    Justin's Portfolio
+Author:         Justin Euteneier
+Author URI:     http://justineuteneier.com/
+Template:       chun
+Version:        1.0.0
+*/
+
+/* This stylesheet is not loaded when SCRIPT_DEBUG is set to false. 'style.min.css' is used instead. */
+
+/**
+ * Defaults
+ *
+ *	Font sizes are calculated based on a 16-pixel base.
+ *	44 / 16   =   2.75rem
+ *	19 / 16   =   1.1875rem
+ *	18 / 16   =   1.125rem
+ *	17 / 16   =   1.0675rem
+ *	16 / 16   =   1rem
+ *	15 / 16   =   0.9375rem
+ *	14 / 16   =   0.875rem
+ *	13 / 16   =   0.8125rem
+ *
+ * --------------------------------------------------------------------------- */
+
+/* 12-column responsive grid */
+
+.row {
+    clear: both;
+    max-width: 1040px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+[class^="col-"] {
+    float: left;
+    margin: 0 3.84615384615% 0 0;
+    list-style: none;
+    position: relative;
+}
+
+[class^="col-"]:last-child {
+    margin: 0;
+}
+
+.col-1 { width: 4.8076923077% }
+.col-2 { width: 13.4615384615% }
+.col-3 { width: 22.1153846154% }
+.col-4 { width: 30.7692307692% }
+.col-5 { width: 39.4230769231% }
+.col-6 { width: 48.0769230769% }
+.col-7 { width: 56.7307692308% }
+.col-8 { width: 65.3846153846% }
+.col-9 { width: 74.0384615385% }
+.col-10 { width: 82.6923076923% }
+.col-11 { width: 91.3461538462% }
+.col-12 { width: 100%; margin: 0 }
+
+
+body {
+	border-top: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+	background-image: url('http://justineuteneier.com/wp-content/uploads/2014/01/header-bg.jpg');
+	background-repeat: repeat-x;
+	height: 84px;
+	width: 100%;
+}
+
+#logo {
+	margin: 0 5%;
+	float: left;
+	background: url('http://justineuteneier.com/wp-content/uploads/2014/01/logo.png');
+	background-repeat: no-repeat;
+	width:211px;
+	height:84px;
+	text-indent: -9999px;
+}
+
+.social {
+	float: right;
+	width: auto;
+	margin: 30px 5% 0 30px;
+}
+
+.social li {
+	display: inline-block;
+}
+
+.social li a {
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	text-indent: -9999px;
+	cursor: pointer;
+	margin-left: 15px;
+}
+
+.social .linkedin a {background: url(http://justineuteneier.com/wp-content/uploads/2014/01/linkedin.png) 0 0 no-repeat;}
+
+.social .twitter a {background: url(http://justineuteneier.com/wp-content/uploads/2014/01/twitter_bird.png) 0 0 no-repeat;}
+
+.mobile-nav {display: none;}
+
+#menu-primary { margin: 0 0 15px; width: auto;}
+
+#menu-primary li a:hover, #menu-primary li:hover > a, #menu-primary li.current-menu-item > a { color: #fff !important; }
+
+#menu-primary li a { color: #999999 !important; }
+
+.breadcrumb-trail, .entry-header { display: none; }
+
+.hentry { border-top: none; padding: 0; margin: 0;}
+
+.entry-content {background: #e2e2e2;}
+
+#rev_slider_1_1_wrapper {
+	z-index: 0;
+}
+
+#portfolio-items {
+	background: url('http://justineuteneier.com/wp-content/uploads/2014/01/code-background.jpg') no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-color: #fff;
+	padding: 3% 5%;
+}
+
+#about {
+	background-color: #4C3636;
+	padding: 3% 5%;
+	color: #fff;
+}
+
+.wp-image-117 {display: none;}
+.wp-image-118 {margin: 0;}
+
+#contact {
+	background-color: #4C4C4C;
+	color: #fff;
+	padding: 3% 5%;
+}
+
+#contact h3 {text-align: center;}
+
+.clearfix:before, section:before, .row:before, .clearfix:after, section:after, .row:after {
+display: table;
+content: "";
+}
+
+.gallery .col-1 .gallery-icon img, .gallery .col-2 .gallery-icon img, .gallery .col-3 .gallery-icon img, .gallery .col-4 .gallery-icon img, .gallery .col-5 .gallery-icon img, .gallery .col-6 .gallery-icon img {
+padding: 10px;
+background: #000;
+}
+
+.gallery-icon {margin-bottom: 0;}
+
+.gallery {margin: 0 0 0px !important;}
+
+.entry-footer { display: none; }
+
+.tp-caption.noshadow {
+width: 49%;
+white-space: normal !important;
+font-size: 16px;
+}
+
+.tp-caption h2 { font-size: 28px }
+
+.tp-caption h3 { font-size: 20px; color: #999999;}
+
+.tp-caption p.excerpt-title { font-size: 28px }
+
+.tp-caption p.excerpt-subtitle { font-size: 20px; color: #999999;}
+
+#contact-2col #contact-left{
+	width: 48.0769230769%;
+	float: left;
+}
+#contact-2col #contact-right{
+	width: 48.0769230769%;
+	float: right;
+}
+
+#contact-2col input[type="text"], #contact-2col input[type="email"], #contact-2col textarea{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width: 90%;
+}
+
+#contact-2col textarea {
+    position: relative;
+    padding: 5px;
+}
+
+#contact-2col #submit-wrapper {width: 90%;}
+
+#contact-2col input[type="submit"]{
+	padding:3px 10px;
+	background:#222;
+	color:#fff;
+	border: 1px solid #fff;
+	float:right;
+	font-size: 12px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#contact-right p {margin-bottom: 10px;}
+
+#contact-2col input[type="text"]:focus, #contact-2col input[type="email"]:focus, #contact-2col textarea:focus{
+	background: #ddd;
+}
+#contact-2col input[type="submit"]:hover{
+	background:#fff;
+	color:#222;
+	border: 1px solid #222;
+}
+
+div.wpcf7-mail-sent-ok {
+	border: 2px solid #222 !important;
+	clear: both;
+	width: 60%;
+	margin: 0 auto !important;
+	text-align: center;
+}
+
+#footer .credit {margin-bottom: 1px;}
+
+.footer-content a, .footer-content a:hover, .footer-content a:active {color: #fff;}
+
+#footer a {border-bottom: none;}
+
+body.error-404 {
+	background: #fff;
+}
+
+.error-404 #content {
+	padding: 10%;
+}
+
+.error-404 .hfeed p {
+	padding: 125px 0;
+	text-align: center;
+}
+
+.error-404 .hfeed a {
+	color: #0000ff;
+}
+
+@media screen and (max-width: 890px) {
+	#menu-primary li a {padding: 12px 10px;}
+}
+
+@media screen and (max-width: 748px) {
+    /* Tablet styles (wider than 720 pixels) */
+    ul.social {display: none;}
+
+    .gallery .col-1 .gallery-icon img, .gallery .col-2 .gallery-icon img, .gallery .col-3 .gallery-icon img, .gallery .col-4 .gallery-icon img, .gallery .col-5 .gallery-icon img, .gallery .col-6 .gallery-icon img {padding: 3px;}
+    
+    .wp-image-118 {display: none;}
+    .wp-image-117 {display: block; margin-bottom: 0;}
+
+    #wpcf7-f5-p2-o1 {text-align: center;}
+
+    section#about .col-4, section#about .col-8 {width:100%; text-align: center;}
+
+    section#about ul {list-style-type: none;}
+
+    #contact-2col #contact-left {
+		width: inherit;
+		float: none;
+	}
+
+    #contact-2col #contact-right {
+		width: inherit;
+		float: none;
+	}
+
+	#contact-2col #submit-wrapper {width: inherit;}
+
+	#contact-2col input[type="submit"] {float: none;}
+}
+
+
